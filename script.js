@@ -28,4 +28,4 @@ window.onload = function() {
   
     clearTimeout(countUpFromTime.interval);
     countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
-  }
+}
