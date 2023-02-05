@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5%;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Inter';
+    background-color: black;
+    color: white;
+}
+
+h1,h2,h3,h4,h5 {
+    text-align: center;
+}
+
+.no {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.image {
+    width: 100px;
+    height: 50px;
+}
+
+.wait {
+    margin-bottom: 50px;
+}
+
+.question {
+    text-align: left;
+}
+
+.questionBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.countup {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .countup .timeel {
+    display: inline-block;
+    padding: 10px;
+    background: #151515;
+    margin: 0;
+    color: white;
+    min-width: 2.6rem;
+    margin-left: 13px;
+    border-radius: 10px 0 0 10px;
+  }
+  .countup span[class*="timeRef"] {
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    background: #ffffff;
+    color: black;
+  }
