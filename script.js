@@ -12,15 +12,17 @@ window.onload = function() {
         countFrom = new Date(countFrom),
         timeDifference = (now - countFrom);
       
-    var secondsInADay = 60 * 60 * 1000 * 24,
-        secondsInAHour = 60 * 60 * 1000;
+    var secondsInADay = 60 * 60 * 1000 * 24, secondsInAHour = 60 * 60 * 1000;
+    var secondsInAWeek = 604800;
       
-    days = Math.floor(timeDifference / (secondsInADay) * 1);
+    weeks = Math.floor((timeDifference / (secondsInADay) * 1) / 7);
+    days = Math.floor(timeDifference / (secondsInADay) * 1 % 7);
     hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
     mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
     secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
   
     var idEl = document.getElementById(id);
+    idEl.getElementsByClassName('weeks')[0].innerHTML = weeks;
     idEl.getElementsByClassName('days')[0].innerHTML = days;
     idEl.getElementsByClassName('hours')[0].innerHTML = hours;
     idEl.getElementsByClassName('minutes')[0].innerHTML = mins;

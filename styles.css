@@ -7,6 +7,7 @@
 }
 
 body {
+    max-height: 100vh;
     height: calc(100vh-30px);
     width: 100%;
     font-family: 'Inter';
@@ -46,7 +47,7 @@ h1,h2,h3,h4,h5 {
   }
   .countup .timeel {
     display: inline-block;
-    padding: 10px;
+    padding: 12px;
     background: #00673f;
     margin: 0;
     color: white;
@@ -74,4 +75,25 @@ footer {
     width: 100%;
     height: 500px;
     bottom:0;
+}
+
+#usflogoback {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    #usflogofront {
+        display: none;
+    }
+
+    #usflogoback {
+        display: block;
+        margin-left: calc((100% - 50px)/2);
+        margin-right: auto;
+    }
+
+}
+
+span {
+    margin-bottom:20px;
 }
