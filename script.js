@@ -29,3 +29,18 @@ window.onload = function() {
     clearTimeout(countUpFromTime.interval);
     countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
 }
+
+const fireDiv = document.querySelector('.fireworksDiv');
+const fireworks = new Fireworks(fireDiv,{
+  delay: {min: 90, max:120},
+  trace: 3,
+  particles: 25,
+  acceleration: 1,
+  gravity: 0.05,
+  hue: {
+    min: 147,
+    max: 167
+  },
+})
+
+//fireworks.start();
