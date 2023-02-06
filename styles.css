@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .wait {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .question {
@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5 {
 
 .countup {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .countup .timeel {
     display: inline-block;
@@ -96,4 +96,8 @@ footer {
 
 span {
     margin-bottom:20px;
+}
+
+.clocks {
+    margin-bottom: 10px;
 }
