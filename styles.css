@@ -81,6 +81,10 @@ footer {
     display: none;
 }
 
+a {
+    color: white;
+}
+
 @media only screen and (max-width: 1000px) {
     #usflogofront {
         display: none;
@@ -90,6 +94,10 @@ footer {
         display: block;
         margin-left: calc((100% - 50px)/2);
         margin-right: auto;
+    }
+
+    .question {
+        margin-right: 0;
     }
 
 }
