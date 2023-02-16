@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+    --backgroundcolor: black;
+    --textcolorlight: white;
+    --textcolordark: black;
+    --usfcolor: #00673f;
+    --accentcolor: white;
+    --font: 'Inter','Roboto','Arial','Times New Roman';
+}
+
+
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -10,9 +21,9 @@ body {
     max-height: 100vh;
     height: calc(100vh-30px);
     width: 100%;
-    font-family: 'Inter';
-    background-color: black;
-    color: white;
+    font-family: var(--font);
+    background-color: var(--backgroundcolor);
+    color: var(--textcolorlight);
 }
 
 h1,h2,h3,h4,h5 {
@@ -48,9 +59,9 @@ h1,h2,h3,h4,h5 {
   .countup .timeel {
     display: inline-block;
     padding: 12px;
-    background: #00673f;
+    background: var(--usfcolor);
     margin: 0;
-    color: white;
+    color: var(--textcolorlight);
     min-width: 2.6rem;
     margin-left: 13px;
     border-radius: 10px 0 0 10px;
@@ -58,8 +69,9 @@ h1,h2,h3,h4,h5 {
   .countup span[class*="timeRef"] {
     border-radius: 0 10px 10px 0;
     margin-left: 0;
-    background: #ffffff;
-    color: black;
+    background: var(--accentcolor);
+    color: var(--textcolordark);
+    width: 90px;
   }
 
 footer {
@@ -82,7 +94,7 @@ footer {
 }
 
 a {
-    color: white;
+    color: var(--textcolorlight);
 }
 
 @media only screen and (max-width: 1000px) {
