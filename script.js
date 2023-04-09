@@ -4,7 +4,7 @@
  */
 window.onload = function() {
     // Month Day, Year Hour:Minute:Second, id-of-element-container
-    countUpFromTime("Dec 21, 2022 20:13:00 GMT-0500 (Eastern Standard Time)", 'countup1'); // ****** Change this line!
+    countUpFromTime("Feb 6, 2023 13:13:00 GMT-0500 (Eastern Standard Time)", 'countup1'); // ****** Change this line!
   };
   function countUpFromTime(countFrom, id) {
     countFrom = new Date(countFrom).getTime();
