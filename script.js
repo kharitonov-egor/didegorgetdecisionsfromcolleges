@@ -2,6 +2,7 @@
  * Basic Count Up from Date and Time
  * Author: @mrwigster / https://guwii.com/bytes/count-date-time-javascript/
  */
+/*
 window.onload = function() {
     // Month Day, Year Hour:Minute:Second, id-of-element-container
     countUpFromTime("Feb 6, 2023 13:13:00 GMT-0500 (Eastern Standard Time)", 'countup1'); // ****** Change this line!
@@ -46,5 +47,5 @@ const fireworks = new Fireworks(fireDiv,{
     max: 167
   },
 })
-
+*/
 //fireworks.start();
